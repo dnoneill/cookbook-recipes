@@ -25,6 +25,11 @@
         http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest={{manifest_url |strip}}
     {% endcapture %}
     {% assign default_text="View in IIIF Curation Viewer" %}
+{% elsif include.type == 'Annona' %}
+    {% capture viewer_url %}
+        https://ncsu-libraries.github.io/annona/tools/#/display?url={{manifest_url |strip}}&viewtype=iiif-rangestoryboard
+    {% endcapture %}
+    {% assign default_text="View in Annona" %}
 {% else %}    
     {% capture default_text %}Unknown Viewer type '{{ include.type}}'{% endcapture %}
     {% capture viewer_url %}{{manifest_url |strip}}{% endcapture %}
