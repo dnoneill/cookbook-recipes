@@ -7,6 +7,7 @@ summary: "The simplest viable manifest for image content. If all you have for an
 viewers:
  - Mirador
  - UV
+ - Annona
 topic: 
  - basic
  - image
@@ -30,8 +31,8 @@ The `items` property of the Canvas is a list of annotation pages, in this case t
 This recipe is not for large images or deep zoom functionality. For this, see the [Support Deep Viewing with Basic Use of a IIIF Image Service][0005] recipe.
 
 ## Example
-
-{% include manifest_links.html viewers="UV, Mirador" manifest="manifest.json" %}
+{{page.viewers | join: ', '}}
+{% include manifest_links.html viewers="{{page.viewers | join: ', '}}" manifest="manifest.json" %}
 
 {% include jsonviewer.html src="manifest.json" %}
 
