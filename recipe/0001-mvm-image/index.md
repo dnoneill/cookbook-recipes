@@ -32,7 +32,7 @@ This recipe is not for large images or deep zoom functionality. For this, see th
 
 ## Example
 {{page.viewers | join: ', '}}
-{% include manifest_links.html viewers="{{page.viewers | join: ', '}}" manifest="manifest.json" %}
+{% include manifest_links.html viewers="{{page.viewers | join: ', ' | jsonify}}" manifest="manifest.json" %}
 
 {% include jsonviewer.html src="manifest.json" %}
 
