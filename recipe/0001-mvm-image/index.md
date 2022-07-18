@@ -31,6 +31,7 @@ The `items` property of the Canvas is a list of annotation pages, in this case t
 This recipe is not for large images or deep zoom functionality. For this, see the [Support Deep Viewing with Basic Use of a IIIF Image Service][0005] recipe.
 
 ## Example
+{{page.viewers | join: ', '}}
 
 {% include manifest_links.html viewers="UV, Mirador, Annona" manifest="manifest.json" %}
 

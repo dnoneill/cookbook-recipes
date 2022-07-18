@@ -1,4 +1,5 @@
-theme:          iiifc-theme
+remote_theme: iiif/iiifc-theme
+#theme:          iiifc-theme
 permalink:      pretty
 
 cookbook_url:   ''
